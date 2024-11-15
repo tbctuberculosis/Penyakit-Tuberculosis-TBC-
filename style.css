@@ -26,19 +26,23 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-item: center;
     padding: 20px;
     background-color: rgb(140, 140, 211);
     color: white;
+    overflow: hidden;
 }
 
 .navbar-logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 .navbar-menu {
     list-style: none;
     display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .navbar-menu li {
@@ -53,6 +57,12 @@ body {
     padding-bottom: 5px; /* Jarak antara teks dan border bawah */
     transition: color 0.3s;
 }
+/* Untuk tampilan perangkat kecil */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
 
 .navbar-menu li a::after {
     content: '';
