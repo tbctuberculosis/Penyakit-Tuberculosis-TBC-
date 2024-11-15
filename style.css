@@ -57,12 +57,6 @@ body {
     padding-bottom: 5px; /* Jarak antara teks dan border bawah */
     transition: color 0.3s;
 }
-/* Untuk tampilan perangkat kecil */
-@media (max-width: 768px) {
-    .navbar-menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
 
 .navbar-menu li a::after {
     content: '';
